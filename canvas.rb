@@ -38,6 +38,11 @@ class Canvas
     context.rectangle(x,y,size,size)
     context.stroke
   end
+
+  def circle(x,y,r)
+    context.arc(x, y, r, 0, 2 * Math::PI)
+    context.stroke
+  end
 end
 
 # Canvas.create("hello.png") do |g|
