@@ -10,21 +10,16 @@ end
 class Line
   attr_reader :head
   attr_reader :tail
+  
   def initialize(head,tail)
     @head = head
     @tail = tail
   end
+  
+  def render(canvas)
+    canvas.line(self.head.x, self.head.y, self.tail.x, self.tail.y)
+  end
 end
-
-p1 = Point.new(100,200)
-p2 = Point.new(150,130)
-line = Line.new(p1,p2)
-p p1
-p p2
-p line.head
-p line.tail
-
-p line
 
 class Square
   attr_reader :origin
@@ -46,7 +41,10 @@ class Circle
     @center = center
     @radius = radius
   end
+  def render(canvas)
+    canvas.circle(self.center.x, self.center.y, self.radius)
+  #   canvas.line(self.head.x, self.head.y, self.tail.x, self.tail.y)
+  end
 end
 
-circle = Circle.new(Point.new(100,200), 40)
-p circle
+
