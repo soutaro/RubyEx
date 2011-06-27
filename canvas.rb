@@ -21,7 +21,7 @@ class Canvas
   end
 
   def self.create(file)
-    this = Graphics.new
+    this = self.new
     
     yield(this)
     
