@@ -10,8 +10,6 @@ Canvas.create("hello.png") do |c|
     end
     i = i + 1
   end
-  
-  c.circle(100,100,30)
 end
 
 # c.square(20,20,500)
