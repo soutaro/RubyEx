@@ -1,12 +1,11 @@
 PAPER = 0
 SCISORS = 1
 STONE = 2
-puts("paper=0, scisors=1, stone=2 ?")
-choice = gets()
-player = Integer(choice)
-unless player == 0 || player == 1 || player == 2
-  puts("Error!")
-  exit
+player = 3
+until player == 0 || player == 1 || player == 2
+  puts("paper=0, scisors=1, stone=2 ?")
+  choice = gets()
+  player = Integer(choice)
 end
 
 computer = rand(3)
