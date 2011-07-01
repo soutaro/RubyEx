@@ -4,6 +4,11 @@ STONE = 2
 puts("paper=0, scisors=1, stone=2 ?")
 choice = gets()
 player = Integer(choice)
+unless player == 0 || player == 1 || player == 2
+  puts("Error!")
+  exit
+end
+
 computer = rand(3)
 puts("computer: #{computer}")
 if player == computer
