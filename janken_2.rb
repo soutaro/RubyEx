@@ -5,6 +5,10 @@ player = 3
 until player == 0 || player == 1 || player == 2
   puts("paper=0, scisors=1, stone=2 ?")
   choice = gets()
+  unless choice
+    puts("Exit")
+    exit
+  end
   player = Integer(choice)
 end
 
