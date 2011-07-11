@@ -65,8 +65,8 @@ class Canvas
   end
 end
 
-Canvas.create("hello.png") do |g|
-  g.line(0,0,200,300, :stroke => [0,1,0,1])
-  g.square(200,300,30, :stroke => [0,1,1,1], :fill => [1,0,0,0.5])
-  g.circle(100,100,100, :fill => [0,0,1,0.3])
-end
+# Canvas.create("hello.png") do |g|
+#   g.line(0,0,200,300, :stroke => [0,1,1,1])
+#   g.square(200,300,30, :stroke => [1,0,1,1], :fill => [0,0,0,0.7])
+#   g.circle(100,100,100, :stroke => [0,1,0,1], :fill => [1,1,0,0.5])
+# end

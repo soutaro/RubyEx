@@ -5,7 +5,11 @@ Canvas.create("hello.png") do |c|
   while i < 8
     j = 0
     while j < 8
-      c.square(i*70, j*70, 70)
+      if (j % 2) == (i % 2)
+        c.square(i*70, j*70, 70, :fill => [0,0,0,1])
+      else
+        c.square(i*70, j*70, 70)
+      end
       j = j + 1
     end
     i = i + 1
