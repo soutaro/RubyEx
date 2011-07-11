@@ -24,12 +24,20 @@ end
 class Square
   attr_reader :origin
   attr_accessor :size
+  
+  attr_accessor :fill_color
+  attr_accessor :border_color
+  
   def initialize(origin,size)
     @origin = origin
     @size = size
+    
+    @fill_color = [0,0,0,0]
+    @border_color = [0,0,0,1]
   end
+  
   def render(canvas)
-    canvas.square(self.origin.x, self.origin.y, self.size)
+    canvas.square(self.origin.x, self.origin.y, self.size, :fill => self.fill_color, :stroke => self.border_color)
   end
 end
 # origin = Point.new(100,150)
