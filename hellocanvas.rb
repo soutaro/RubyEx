@@ -16,6 +16,7 @@ Canvas.create("hello.png") do |c|
   end
 end
 
-# c.square(20,20,500)
+
+# c.circle(20,20,500)
 # c.square(30,30,450)
 # c.square(40,40,400)
