@@ -8,6 +8,11 @@ while i <= 18
   j = 1
   while j <= 18
     sq = Square.new(Point.new(i*30,j*30), 30)
+    
+    if i.even? != j.even?
+      sq.fill_color = [0,0,0,1]
+    end
+    
     objects << sq
     j = j + 1
   end
